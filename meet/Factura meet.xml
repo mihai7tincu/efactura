@@ -29,6 +29,7 @@
                 <cbc:CompanyID>J23/310/18.01.2023</cbc:CompanyID>
             </cac:PartyLegalEntity>
             <cac:Contact>
+                <cbc:Name>Tincu Mihail</cbc:Name>
                 <cbc:Telephone>0775124214</cbc:Telephone>
                 <cbc:ElectronicMail>mihai.tincu@gmail.com</cbc:ElectronicMail>
             </cac:Contact>
@@ -42,6 +43,7 @@
             <cac:PostalAddress>
                 <cbc:StreetName>Str. Oituz, nr. 9, bl. C9, sc. D, ap. 17</cbc:StreetName>
                 <cbc:CityName>Pitesti</cbc:CityName>
+                <cbc:PostalZone>110252</cbc:PostalZone>
                 <cbc:CountrySubentity>RO-AG</cbc:CountrySubentity>
                 <cac:Country>
                     <cbc:IdentificationCode>RO</cbc:IdentificationCode>
@@ -58,7 +60,7 @@
                 <cbc:CompanyID>J03/626/2022</cbc:CompanyID>
             </cac:PartyLegalEntity>
             <cac:Contact>
-                <cbc:Name>George Viorel Florea</cbc:Name>
+                <cbc:Name>Florea George Viorel</cbc:Name>
                 <cbc:Telephone>0736275774</cbc:Telephone>
                 <cbc:ElectronicMail>georgeviorelflorea@yahoo.com</cbc:ElectronicMail>
             </cac:Contact>
