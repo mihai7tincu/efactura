@@ -27,6 +27,7 @@
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>CODE ANYTHING SRL</cbc:RegistrationName>
                 <cbc:CompanyID>J23/310/18.01.2023</cbc:CompanyID>
+                <cbc:CompanyLegalForm>RO94BTRLRONCRT0667191901</cbc:CompanyLegalForm>
             </cac:PartyLegalEntity>
             <cac:Contact>
                 <cbc:Name>Tincu Mihail</cbc:Name>
@@ -86,6 +87,8 @@
         <cbc:TaxInclusiveAmount currencyID="RON">26000.12</cbc:TaxInclusiveAmount>
         <cbc:AllowanceTotalAmount currencyID="RON">0.00</cbc:AllowanceTotalAmount>
         <cbc:ChargeTotalAmount currencyID="RON">0.00</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="RON">0.00</cbc:PrepaidAmount>
+        <cbc:PayableRoundingAmount currencyID="RON">0.00</cbc:PayableRoundingAmount>
         <cbc:PayableAmount currencyID="RON">26000.12</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <cac:InvoiceLine>
@@ -107,4 +110,4 @@
         </cac:Price>
     </cac:InvoiceLine>
 </Invoice>
-<!--XML generat cu aplicatia ANAF ver.1.0.4-->
+<!--XML generat cu aplicatia ANAF ver.1.0.5-->
