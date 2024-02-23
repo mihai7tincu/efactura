@@ -10,36 +10,36 @@
     <div ng-app="myApp" ng-controller="invoiceCtrl">
         <h1 class="title">{{title}}</h1>
 
-        <span>Rata: </span>
-        <span>{{rate}} €/h</span>
+        <span>Rata (€/h): </span>
+        <span>{{rate}}</span>
         <br />
 
-        <span>Curs euro: </span>
-        <span>{{exchangeRate}} lei/€</span>
+        <span>Curs euro (lei/€): </span>
+        <span>{{exchangeRate}}</span>
         <br />
 
-        <span>TVA: </span>
-        <span>{{vatPercentage}}%</span>
+        <span>TVA (%): </span>
+        <span>{{vatPercentage}}</span>
         <br />
 
-        <span>Ore muncite: </span>
-        <span>{{workedHours}} h</span>
+        <span>Ore muncite (h): </span>
+        <span>{{workedHours}}</span>
         <br />
 
-        <span>Pre unitate: </span>
-        <span>{{truncatedUnitPrice()}} lei/h ({{unitPrice}})</span>
+        <span>Pre unitate (lei/h): </span>
+        <span>{{truncatedUnitPrice()}} ({{unitPrice}})</span>
         <br />
 
-        <span>Valoare fara TVA: </span>
-        <span>{{netTotal()}} lei</span>
+        <span>Valoare fara TVA (lei): </span>
+        <span>{{netTotal()}}</span>
         <br />
 
-        <span>Valoare TVA: </span>
-        <span>{{getVat()}} lei ({{vatValue}})</span>
+        <span>Valoare TVA (lei): </span>
+        <span>{{getVat()}} ({{vatValue}})</span>
         <br />
 
-        <span>Total cu TVA: </span>
-        <span>{{getTotal()}} lei</span>
+        <span>Total cu TVA (lei): </span>
+        <span>{{getTotal()}}</span>
         <br />
     </div>
     <style>

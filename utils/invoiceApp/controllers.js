@@ -7,7 +7,7 @@
         $scope.title = 'Calcule factura';
         $scope.exchangeRate = 4.9759;
         $scope.rate = 42;
-        $scope.vatPercentage = 19;
+        $scope.vatPercentage = 0;
         $scope.workedHours = 218;
         $scope.unitPrice = $scope.rate * $scope.exchangeRate;
         $scope.truncatedUnitPrice = function () {
@@ -16,9 +16,9 @@
         $scope.netTotal = function () {
             return $scope.truncatedUnitPrice() * $scope.workedHours;
         }
-        $scope.vatValue = $scope.netTotal() * 19 / 100;
+        $scope.vatValue = $scope.netTotal() * $scope.vatPercentage / 100;
         $scope.getVat = function () {
-            return Math.floor($scope.netTotal() * 19 / 100 * 100) / 100;
+            return Math.floor($scope.netTotal() * $scope.vatPercentage / 100 * 100) / 100;
         }
         $scope.getTotal = function () {
             return $scope.netTotal() + $scope.getVat();
