@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="utils/invoiceApp/angular1.8.2.min.js"></script>
+    <script src="utils/invoiceApp/app.js"></script>
+    <script src="utils/invoiceApp/controllers.js"></script>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="invoiceCtrl">
+        <h1 class="title">{{title}}</h1>
+
+        <span>Rata: </span>
+        <span>{{rate}} €/h</span>
+        <br />
+
+        <span>Curs euro: </span>
+        <span>{{exchangeRate}} lei/€</span>
+        <br />
+
+        <span>TVA: </span>
+        <span>{{vatPercentage}}%</span>
+        <br />
+
+        <span>Ore muncite: </span>
+        <span>{{workedHours}} h</span>
+        <br />
+
+        <span>Pre unitate: </span>
+        <span>{{truncatedUnitPrice()}} lei/h ({{unitPrice}})</span>
+        <br />
+
+        <span>Valoare fara TVA: </span>
+        <span>{{netTotal()}} lei</span>
+        <br />
+
+        <span>Valoare TVA: </span>
+        <span>{{getVat()}} lei ({{vatValue}})</span>
+        <br />
+
+        <span>Total cu TVA: </span>
+        <span>{{getTotal()}} lei</span>
+        <br />
+    </div>
+    <style>
+        .title {
+            padding-left: 150px;
+        }
+    </style>
+</body>
+</html>
