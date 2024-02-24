@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="utils/invoiceApp/angular1.8.2.min.js"></script>
+    <script src="utils/invoiceApp/decimal.min.js"></script>
+    <script src="utils/invoiceApp/app.js"></script>
+    <script src="utils/invoiceApp/controllers.js"></script>
+    <link href="utils/invoiceApp/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="utils/invoiceApp/default.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="invoiceCtrl">
+        <div class="container">
+            <br />
+
+            <div class="row title">
+                <h1>
+                    {{title}}
+                </h1>
+            </div>
+            <br />
+
+            <div class="row">
+                <table>
+                    <tr>
+                        <td class="label">Cota TVA (%):</td>
+                        <td><input type="text" ng-model="vatPercentage" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Rata (€/h):</td>
+                        <td><input type="text" ng-model="rate" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Curs euro (lei/€):</td>
+                        <td><input type="text" ng-model="exchangeRate" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Ore muncite (h):</td>
+                        <td><input type="text" ng-model="workedHours" /></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Pret unitate (lei/h):</td>
+                        <td class="field-vaue">{{getUnitPrice()}}</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Valoare fara TVA (lei):</td>
+                        <td class="field-vaue">{{getNetValue()}}</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Valoare TVA (lei):</td>
+                        <td class="field-vaue">{{getVatValue()}}</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Total cu TVA (lei):</td>
+                        <td class="field-vaue">{{getTotal()}}</td>
+                    </tr>
+                </table>
+            </div>
+            <br />
+
+            <div class="row">
+                <table class="border">
+                    <tr>
+                        <th class="border">Linie</th>
+                        <th class="border">Nume articol</th>
+                        <th class="border">Pret articol</th>
+                        <th class="border">Cantitate</th>
+                        <th class="border">Valoare neta</th>
+                        <th class="border">TVA</th>
+                        <th class="border">Valoare cu TVA</th>
+                    </tr>
+                    <tr>
+                        <td class="border">1</td>
+                        <td class="border">Prestare servicii conform contract</td>
+                        <td class="border">{{getUnitPrice()}}</td>
+                        <td class="border">{{workedHours ? workedHours : 0}}</td>
+                        <td class="border">{{getNetValue()}}</td>
+                        <td class="border">{{getVatValue()}}</td>
+                        <td class="border">{{getTotal()}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

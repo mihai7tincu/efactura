@@ -1,0 +1,25 @@
+.title {
+    justify-content: center;
+}
+
+table.border, th.border, td.border {
+    border: 1px solid #939393;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+th.border {
+    background-color: #f5f5f5;
+}
+
+td.border {
+    text-align: center;
+}
+
+td.label {
+    padding-right: 8px;
+}
+
+.field-vaue {
+    line-height: 30px;
+}
