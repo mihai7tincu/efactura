@@ -4,28 +4,47 @@
         .module("myApp")
         .controller("invoiceCtrl", invoiceCtrl);
     function invoiceCtrl($scope) {
+        Decimal.set({ rounding: Decimal.ROUND_DOWN })
+
         $scope.title = 'Calcule factura';
         $scope.exchangeRate = 4.9759;
         $scope.rate = 42;
         $scope.vatPercentage = 0;
         $scope.workedHours = 218;
-        $scope.unitPrice = function () {
-            return Math.floor($scope.rate * $scope.exchangeRate * 1000) / 1000;
+        $scope.getUnitPrice = function () {
+            if (!$scope.rate)
+                $scope.rate = 0;
+            if (!$scope.exchangeRate)
+                $scope.exchangeRate = 0;
+
+            let rate = new Decimal($scope.rate);
+            let exchangeRate = new Decimal($scope.exchangeRate);
+            let result = rate.times(exchangeRate).toDecimalPlaces(2);
+            return result.toString();
         }
-        $scope.truncatedUnitPrice = function () {
-            return Math.floor($scope.rate * $scope.exchangeRate * 100) / 100;
+        $scope.getNetValue = function () {
+            if (!$scope.workedHours)
+                $scope.workedHours = 0;
+
+            let unitPrice = new Decimal($scope.getUnitPrice());
+            let workedHours = new Decimal($scope.workedHours);
+            let result = unitPrice.times(workedHours).toDecimalPlaces(2);
+            return result.toString();
         }
-        $scope.netTotal = function () {
-            return $scope.truncatedUnitPrice() * $scope.workedHours;
-        }
-        $scope.vatValue = function () {
-            return Math.floor($scope.netTotal() * ($scope.vatPercentage / 100 * 1000)) / 1000;
-        }
-        $scope.getVat = function () {
-            return Math.floor($scope.netTotal() * $scope.vatPercentage / 100 * 100) / 100;
+        $scope.getVatValue = function () {
+            if (!$scope.vatPercentage)
+                $scope.vatPercentage = 0;
+
+            let netValue = new Decimal($scope.getNetValue());
+            let vatPercentage = new Decimal($scope.vatPercentage);
+            let result = netValue.times(vatPercentage).dividedBy(100).toDecimalPlaces(2);
+            return result.toString();
         }
         $scope.getTotal = function () {
-            return $scope.netTotal() + $scope.getVat();
+            let netValue = new Decimal($scope.getNetValue());
+            let vatValue = new Decimal($scope.getVatValue());
+            let result = netValue.add(vatValue).toDecimalPlaces(2);
+            return result.toString();
         }
     }
 })();

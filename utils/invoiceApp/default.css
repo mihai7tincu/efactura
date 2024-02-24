@@ -2,3 +2,7 @@
 .title {
     padding-left: 150px;
 }
+
+table {
+    border-spacing: 30px;
+}
