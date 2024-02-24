@@ -19,3 +19,7 @@ td.border {
 td.label {
     padding-right: 8px;
 }
+
+.field-vaue {
+    line-height: 30px;
+}
