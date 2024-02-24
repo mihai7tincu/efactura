@@ -11,23 +11,23 @@
         <h1 class="title">{{title}}</h1>
 
         <span>Rata (€/h): </span>
-        <span>{{rate}}</span>
+        <input type="text" ng-model="rate" />
         <br />
 
         <span>Curs euro (lei/€): </span>
-        <span>{{exchangeRate}}</span>
+        <input type="text" ng-model="exchangeRate" />
         <br />
 
-        <span>TVA (%): </span>
-        <span>{{vatPercentage}}</span>
+        <span>Cota TVA (%): </span>
+        <input type="text" ng-model="vatPercentage" />
         <br />
 
         <span>Ore muncite (h): </span>
-        <span>{{workedHours}}</span>
+        <input type="text" ng-model="workedHours" />
         <br />
 
         <span>Pre unitate (lei/h): </span>
-        <span>{{truncatedUnitPrice()}} ({{unitPrice}})</span>
+        <span>{{truncatedUnitPrice()}} ({{unitPrice()}})</span>
         <br />
 
         <span>Valoare fara TVA (lei): </span>
@@ -35,7 +35,7 @@
         <br />
 
         <span>Valoare TVA (lei): </span>
-        <span>{{getVat()}} ({{vatValue}})</span>
+        <span>{{getVat()}} ({{vatValue()}})</span>
         <br />
 
         <span>Total cu TVA (lei): </span>
