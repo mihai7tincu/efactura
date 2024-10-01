@@ -89,7 +89,7 @@
         <cbc:ChargeTotalAmount currencyID="RON">0.00</cbc:ChargeTotalAmount>
         <cbc:PrepaidAmount currencyID="RON">0.00</cbc:PrepaidAmount>
         <cbc:PayableRoundingAmount currencyID="RON">0.00</cbc:PayableRoundingAmount>
-        <cbc:PayableAmount currencyID="RON">27300.08</cbc:PayableAmount>
+        <cbc:PayableAmount currencyID="RON">27300.02</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
