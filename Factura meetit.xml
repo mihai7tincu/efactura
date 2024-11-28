@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:ns4="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
 	<cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.1</cbc:CustomizationID>
-	<cbc:ID>F25</cbc:ID>
-	<cbc:IssueDate>2024-10-31</cbc:IssueDate>
-	<cbc:DueDate>2024-11-15</cbc:DueDate>
+	<cbc:ID>F26</cbc:ID>
+	<cbc:IssueDate>2024-11-29</cbc:IssueDate>
+	<cbc:DueDate>2024-12-15</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
 	<cbc:DocumentCurrencyCode>RON</cbc:DocumentCurrencyCode>
 	<cac:AccountingSupplierParty>
@@ -70,10 +70,10 @@
 		</cac:Party>
 	</cac:AccountingCustomerParty>
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="RON">4358.86</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="RON">3943.70</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="RON">22941.35</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="RON">4358.86</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="RON">20756.36</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="RON">3943.70</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>19.00</cbc:Percent>
@@ -84,17 +84,17 @@
 		</cac:TaxSubtotal>
 	</cac:TaxTotal>
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="RON">22941.35</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="RON">22941.35</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="RON">27300.21</cbc:TaxInclusiveAmount>
+		<cbc:LineExtensionAmount currencyID="RON">20756.36</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="RON">20756.36</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="RON">24700.06</cbc:TaxInclusiveAmount>
 		<cbc:PrepaidAmount currencyID="RON">0.00</cbc:PrepaidAmount>
 		<cbc:PayableRoundingAmount currencyID="RON">0.00</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="RON">27300.21</cbc:PayableAmount>
+		<cbc:PayableAmount currencyID="RON">24700.06</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
-		<cbc:InvoicedQuantity unitCode="DAY">23.00</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="RON">22941.35</cbc:LineExtensionAmount>
+		<cbc:InvoicedQuantity unitCode="DAY">19.00</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="RON">20756.36</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Prestare servicii conform contract 05 / 20.01.2023</cbc:Name>
 			<cac:ClassifiedTaxCategory>
@@ -106,7 +106,7 @@
 			</cac:ClassifiedTaxCategory>
 		</cac:Item>
 		<cac:Price>
-			<cbc:PriceAmount currencyID="RON">997.45</cbc:PriceAmount>
+			<cbc:PriceAmount currencyID="RON">1092.44</cbc:PriceAmount>
 		</cac:Price>
 	</cac:InvoiceLine>
 </Invoice>

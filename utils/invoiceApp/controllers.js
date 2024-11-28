@@ -8,8 +8,8 @@
 
         $scope.title = 'Calcule factura';
         $scope.exchangeRate = 4.9759;
-        $scope.rate = 42;
-        $scope.vatPercentage = 0;
+        $scope.rate = 40;
+        $scope.vatPercentage = 19;
         $scope.workedHours = 218;
         $scope.getUnitPrice = function () {
             if (!$scope.rate)
