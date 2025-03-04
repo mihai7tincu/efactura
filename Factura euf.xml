@@ -5,8 +5,14 @@
 	<cbc:IssueDate>2025-02-28</cbc:IssueDate>
 	<cbc:DueDate>2025-03-15</cbc:DueDate>
 	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-	<cbc:Note>Curs euro: 4.9765</cbc:Note>
+	<cbc:Note>Factura stornare pentru F31 din 28.02.2025</cbc:Note>
 	<cbc:DocumentCurrencyCode>RON</cbc:DocumentCurrencyCode>
+	<cac:BillingReference>
+		<cac:InvoiceDocumentReference>
+			<cbc:ID>F31</cbc:ID>
+			<cbc:IssueDate>2025-02-28</cbc:IssueDate>
+		</cac:InvoiceDocumentReference>
+	</cac:BillingReference>
 	<cac:AccountingSupplierParty>
 		<cac:Party>
 			<cac:PartyName>
@@ -71,10 +77,10 @@
 		</cac:Party>
 	</cac:AccountingCustomerParty>
 	<cac:TaxTotal>
-		<cbc:TaxAmount currencyID="RON">6051.42</cbc:TaxAmount>
+		<cbc:TaxAmount currencyID="RON">-6051.42</cbc:TaxAmount>
 		<cac:TaxSubtotal>
-			<cbc:TaxableAmount currencyID="RON">31849.6</cbc:TaxableAmount>
-			<cbc:TaxAmount currencyID="RON">6051.42</cbc:TaxAmount>
+			<cbc:TaxableAmount currencyID="RON">-31849.6</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="RON">-6051.42</cbc:TaxAmount>
 			<cac:TaxCategory>
 				<cbc:ID>S</cbc:ID>
 				<cbc:Percent>19.00</cbc:Percent>
@@ -85,17 +91,17 @@
 		</cac:TaxSubtotal>
 	</cac:TaxTotal>
 	<cac:LegalMonetaryTotal>
-		<cbc:LineExtensionAmount currencyID="RON">31849.6</cbc:LineExtensionAmount>
-		<cbc:TaxExclusiveAmount currencyID="RON">31849.6</cbc:TaxExclusiveAmount>
-		<cbc:TaxInclusiveAmount currencyID="RON">37901.02</cbc:TaxInclusiveAmount>
+		<cbc:LineExtensionAmount currencyID="RON">-31849.6</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="RON">-31849.6</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="RON">-37901.02</cbc:TaxInclusiveAmount>
 		<cbc:PrepaidAmount currencyID="RON">0.00</cbc:PrepaidAmount>
 		<cbc:PayableRoundingAmount currencyID="RON">0.00</cbc:PayableRoundingAmount>
-		<cbc:PayableAmount currencyID="RON">37901.02</cbc:PayableAmount>
+		<cbc:PayableAmount currencyID="RON">-37901.02</cbc:PayableAmount>
 	</cac:LegalMonetaryTotal>
 	<cac:InvoiceLine>
 		<cbc:ID>1</cbc:ID>
 		<cbc:InvoicedQuantity unitCode="HUR">160</cbc:InvoicedQuantity>
-		<cbc:LineExtensionAmount currencyID="RON">31849.6</cbc:LineExtensionAmount>
+		<cbc:LineExtensionAmount currencyID="RON">-31849.6</cbc:LineExtensionAmount>
 		<cac:Item>
 			<cbc:Name>Prestare servicii conform contract 06.09.2024</cbc:Name>
 			<cac:ClassifiedTaxCategory>
@@ -111,4 +117,4 @@
 		</cac:Price>
 	</cac:InvoiceLine>
 </Invoice>
-<!--XML generat cu aplicatia simplificata ANAF ver.1.0.3-->
+<!--XML generat cu aplicatia simplificata ANAF ver.1.0.5-->
