@@ -65,8 +65,8 @@
                     <tr>
                         <th class="border">Linie</th>
                         <th class="border">Nume articol</th>
-                        <th class="border">Pret articol</th>
                         <th class="border">Cantitate</th>
+                        <th class="border">Pret articol</th>
                         <th class="border">Valoare neta</th>
                         <th class="border">TVA</th>
                         <th class="border">Valoare cu TVA</th>
@@ -74,10 +74,21 @@
                     <tr>
                         <td class="border">1</td>
                         <td class="border">Prestare servicii conform contract</td>
-                        <td class="border">{{getUnitPrice()}}</td>
                         <td class="border">{{workedHours ? workedHours : 0}}</td>
+                        <td class="border">{{getUnitPrice()}}</td>
                         <td class="border">{{getNetValue()}}</td>
                         <td class="border">{{getVatValue()}}</td>
+                        <td class="border">
+                            <!--{{getTotal()}}-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border"></td>
+                        <td class="border">Total</td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                        <td class="border"></td>
                         <td class="border">{{getTotal()}}</td>
                     </tr>
                 </table>
