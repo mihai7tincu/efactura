@@ -30,3 +30,5 @@ f39 oct itt 5680619493
 f40 nov itt 5763003967
 f41 dec itt 5869608995
 f42 jan itt 5997411615
+f43 jan itt 6010460113 stornare 42
+f44 jan itt 6010481213 corectie f42
