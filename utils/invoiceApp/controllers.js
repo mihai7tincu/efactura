@@ -7,9 +7,9 @@
         Decimal.set({ rounding: Decimal.ROUND_DOWN })
 
         $scope.title = 'Calcule factura';
-        $scope.exchangeRate = 5.1004;
-        $scope.rate = 35;
-        $scope.vatPercentage = 22;
+        $scope.exchangeRate = 5.24;
+        $scope.rate = 36;
+        $scope.vatPercentage = 21;
         $scope.workedHours = 176;
         $scope.getUnitPrice = function () {
             if (!$scope.rate)
